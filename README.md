@@ -125,8 +125,8 @@ NeuroHealth-Biosignals-EDA/
 
 ### 1\. Clone the Repository \& Navigate
 ```bash
-[git clone https://github.com/KhalilMaaarouf/EEG-ECG-Signal-Processing-Exploratory-Data-Analysis-Pipeline.git
-cd EEG-ECG-Signal-Processing-Exploratory-Data-Analysis-Pipeline](https://github.com/KhalilMaaarouf/EEG-ECG-Signal-Processing-Exploratory-Data-Analysis-Pipeline.git)
+git clone https://github.com/KhalilMaaarouf/EEG-ECG-Signal-Processing-Exploratory-Data-Analysis-Pipeline.git
+cd EEG-ECG-Signal-Processing-Exploratory-Data-Analysis-Pipeline
 ```
 
 ### 2\. Set Up a Virtual Environment
