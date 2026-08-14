@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="100%" height="100%" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Cognitive Fatigue Marker: Theta / Beta Ratio (TBR) by State</text>
+  <text x="450" y="65" text-anchor="middle" font-size="13" font-weight="500" fill="#64748b">Statistical Comparison between Resting Baseline vs. Mental Task Execution (p &lt; 0.001)</text>
+
+  <!-- Grid lines -->
+  <g stroke="#f1f5f9" stroke-width="1.5">
+    <line x1="120" y1="120" x2="800" y2="120"/>
+    <line x1="120" y1="190" x2="800" y2="190"/>
+    <line x1="120" y1="260" x2="800" y2="260"/>
+    <line x1="120" y1="330" x2="800" y2="330"/>
+    <line x1="120" y1="400" x2="800" y2="400"/>
+    <line x1="120" y1="470" x2="800" y2="470"/>
+  </g>
+
+  <!-- Y-Axis -->
+  <line x1="120" y1="100" x2="120" y2="470" stroke="#475569" stroke-width="2"/>
+  <text x="105" y="125" text-anchor="end" font-size="12" font-weight="600" fill="#475569">3.0</text>
+  <text x="105" y="195" text-anchor="end" font-size="12" font-weight="600" fill="#475569">2.5</text>
+  <text x="105" y="265" text-anchor="end" font-size="12" font-weight="600" fill="#475569">2.0</text>
+  <text x="105" y="335" text-anchor="end" font-size="12" font-weight="600" fill="#475569">1.5</text>
+  <text x="105" y="405" text-anchor="end" font-size="12" font-weight="600" fill="#475569">1.0</text>
+  <text x="105" y="475" text-anchor="end" font-size="12" font-weight="600" fill="#475569">0.5</text>
+  <text x="-285" y="40" transform="rotate(-90)" text-anchor="middle" font-size="13" font-weight="700" fill="#1e293b">Theta / Beta Power Ratio (TBR)</text>
+
+  <!-- X-Axis -->
+  <line x1="120" y1="470" x2="800" y2="470" stroke="#475569" stroke-width="2"/>
+
+  <!-- RESTING BOXPLOT (Left, centered at x=310) -->
+  <text x="310" y="505" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Resting Baseline</text>
+  <text x="310" y="525" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">Mean TBR = 2.18 ± 0.32</text>
+
+  <!-- Whisker line resting -->
+  <line x1="310" y1="150" x2="310" y2="280" stroke="#1e40af" stroke-width="2"/>
+  <line x1="280" y1="150" x2="340" y2="150" stroke="#1e40af" stroke-width="2"/>
+  <line x1="280" y1="280" x2="340" y2="280" stroke="#1e40af" stroke-width="2"/>
+
+  <!-- Box resting (TBR ~ 1.85 to 2.45) -->
+  <rect x="250" y="170" width="120" height="85" rx="4" fill="#3b82f6" fill-opacity="0.85" stroke="#1d4ed8" stroke-width="2"/>
+  <!-- Median line -->
+  <line x1="250" y1="210" x2="370" y2="210" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Jittered scatter points resting -->
+  <circle cx="295" cy="180" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="325" cy="205" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="280" cy="225" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="335" cy="165" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="305" cy="245" r="4.5" fill="#0f172a" opacity="0.7"/>
+
+  <!-- TASK BOXPLOT (Right, centered at x=610) -->
+  <text x="610" y="505" text-anchor="middle" font-size="14" font-weight="700" fill="#b91c1c">Task Execution</text>
+  <text x="610" y="525" text-anchor="middle" font-size="12" font-weight="500" fill="#64748b">Mean TBR = 0.84 ± 0.18</text>
+
+  <!-- Whisker line task -->
+  <line x1="610" y1="360" x2="610" y2="455" stroke="#991b1b" stroke-width="2"/>
+  <line x1="580" y1="360" x2="640" y2="360" stroke="#991b1b" stroke-width="2"/>
+  <line x1="580" y1="455" x2="640" y2="455" stroke="#991b1b" stroke-width="2"/>
+
+  <!-- Box task (TBR ~ 0.70 to 1.05) -->
+  <rect x="550" y="380" width="120" height="60" rx="4" fill="#ef4444" fill-opacity="0.85" stroke="#b91c1c" stroke-width="2"/>
+  <!-- Median line -->
+  <line x1="550" y1="410" x2="670" y2="410" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Jittered scatter points task -->
+  <circle cx="590" cy="390" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="630" cy="420" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="575" cy="435" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="620" cy="375" r="4.5" fill="#0f172a" opacity="0.7"/>
+  <circle cx="640" cy="405" r="4.5" fill="#0f172a" opacity="0.7"/>
+
+  <!-- Significance Bar -->
+  <path d="M 310 135 L 310 110 L 610 110 L 610 135" fill="none" stroke="#0f172a" stroke-width="2"/>
+  <rect x="400" y="92" width="120" height="30" rx="6" fill="#fecdd3" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="460" y="112" text-anchor="middle" font-size="12" font-weight="800" fill="#9f1239">*** p = 0.0002</text>
+
+  <!-- Summary Badge Callout -->
+  <rect x="230" y="290" width="460" height="55" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="460" y="312" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Key Clinical Insight: 61.5% TBR Reduction During Cognitive Workload</text>
+  <text x="460" y="332" text-anchor="middle" font-size="11" font-weight="500" fill="#475569">Shift from high Theta (fatigue/drowsiness) to elevated Beta power (active focus)</text>
+</svg>

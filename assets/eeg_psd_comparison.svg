@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" width="100%" height="100%" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="restGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2b5c8f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2b5c8f" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="taskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d9534f" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d9534f" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title & Subtitle -->
+  <text x="500" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">EEG Power Spectral Density (PSD) Comparison: Resting vs. Mental Workload</text>
+  <text x="500" y="65" text-anchor="middle" font-size="13" font-weight="500" fill="#64748b">Welch Estimator (30s Epochs, 0.5Hz - 35Hz) — NeuroHealth Biomedical Pipeline</text>
+
+  <!-- Frequency Band Shading & Labels -->
+  <!-- Delta: 0.5 - 4 Hz -->
+  <rect x="100" y="90" width="80" height="380" fill="#f1f5f9" opacity="0.8"/>
+  <text x="140" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#475569">Delta (0.5-4Hz)</text>
+
+  <!-- Theta: 4 - 8 Hz -->
+  <rect x="180" y="90" width="110" height="380" fill="#fef9c3" opacity="0.6"/>
+  <text x="235" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#854d0e">Theta (4-8Hz)</text>
+
+  <!-- Alpha: 8 - 12 Hz -->
+  <rect x="290" y="90" width="110" height="380" fill="#dcfce7" opacity="0.6"/>
+  <text x="345" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Alpha (8-12Hz)</text>
+
+  <!-- Beta: 13 - 30 Hz -->
+  <rect x="400" y="90" width="460" height="380" fill="#ffedd5" opacity="0.6"/>
+  <text x="630" y="110" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412">Beta (13-30Hz)</text>
+
+  <!-- Grid Lines -->
+  <g stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4">
+    <line x1="100" y1="150" x2="880" y2="150" />
+    <line x1="100" y1="230" x2="880" y2="230" />
+    <line x1="100" y1="310" x2="880" y2="310" />
+    <line x1="100" y1="390" x2="880" y2="390" />
+    <line x1="100" y1="470" x2="880" y2="470" />
+  </g>
+
+  <!-- Axes -->
+  <line x1="100" y1="90" x2="100" y2="470" stroke="#334155" stroke-width="2"/>
+  <line x1="100" y1="470" x2="880" y2="470" stroke="#334155" stroke-width="2"/>
+
+  <!-- Y-Axis Labels (Log scale uV^2/Hz) -->
+  <text x="85" y="155" text-anchor="end" font-size="11" font-weight="600" fill="#475569">100.0</text>
+  <text x="85" y="235" text-anchor="end" font-size="11" font-weight="600" fill="#475569">10.0</text>
+  <text x="85" y="315" text-anchor="end" font-size="11" font-weight="600" fill="#475569">1.0</text>
+  <text x="85" y="395" text-anchor="end" font-size="11" font-weight="600" fill="#475569">0.1</text>
+  <text x="85" y="475" text-anchor="end" font-size="11" font-weight="600" fill="#475569">0.01</text>
+
+  <!-- Y-Axis Title -->
+  <text x="-280" y="35" transform="rotate(-90)" text-anchor="middle" font-size="13" font-weight="700" fill="#1e293b">Power Spectral Density (uV²/Hz)</text>
+
+  <!-- X-Axis Labels -->
+  <text x="100" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">0.5</text>
+  <text x="235" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">6</text>
+  <text x="345" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">10</text>
+  <text x="490" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">16</text>
+  <text x="630" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">22</text>
+  <text x="770" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">28</text>
+  <text x="880" y="495" text-anchor="middle" font-size="11" font-weight="600" fill="#475569">35 Hz</text>
+
+  <!-- X-Axis Title -->
+  <text x="490" y="530" text-anchor="middle" font-size="13" font-weight="700" fill="#1e293b">Frequency (Hz)</text>
+
+  <!-- Resting PSD Curve (High Alpha Peak around 10.5Hz) -->
+  <path d="M 100 190 Q 140 210, 180 230 Q 235 240, 290 280 Q 330 350, 345 160 Q 360 330, 400 340 Q 550 380, 700 420 Q 800 440, 880 455" fill="none" stroke="#2b5c8f" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- Task PSD Curve (High Beta Peak around 22Hz, Suppressed Alpha) -->
+  <path d="M 100 210 Q 140 225, 180 245 Q 235 270, 290 310 Q 345 340, 400 330 Q 520 310, 630 190 Q 720 310, 880 440" fill="none" stroke="#d9534f" stroke-width="3.5" stroke-dasharray="0" stroke-linejoin="round"/>
+
+  <!-- Annotations / Callouts -->
+  <!-- Alpha Peak Annot -->
+  <circle cx="345" cy="160" r="5" fill="#2b5c8f" stroke="#ffffff" stroke-width="2"/>
+  <line x1="345" y1="160" x2="310" y2="135" stroke="#2b5c8f" stroke-width="1.5"/>
+  <rect x="210" y="120" width="135" height="28" rx="4" fill="#ffffff" stroke="#2b5c8f" stroke-width="1.5"/>
+  <text x="277" y="138" text-anchor="middle" font-size="10" font-weight="700" fill="#2b5c8f">Alpha Peak (10.5 Hz)</text>
+
+  <!-- Beta Peak Annot -->
+  <circle cx="630" cy="190" r="5" fill="#d9534f" stroke="#ffffff" stroke-width="2"/>
+  <line x1="630" y1="190" x2="670" y2="155" stroke="#d9534f" stroke-width="1.5"/>
+  <rect x="650" y="135" width="155" height="28" rx="4" fill="#ffffff" stroke="#d9534f" stroke-width="1.5"/>
+  <text x="727" y="153" text-anchor="middle" font-size="10" font-weight="700" fill="#d9534f">Task Beta Surge (22.5 Hz)</text>
+
+  <!-- Legend Box -->
+  <rect x="640" y="320" width="220" height="85" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <line x1="655" y1="345" x2="685" y2="345" stroke="#2b5c8f" stroke-width="3.5"/>
+  <text x="695" y="349" font-size="12" font-weight="700" fill="#1e293b">Resting State (Baseline)</text>
+
+  <line x1="655" y1="380" x2="685" y2="380" stroke="#d9534f" stroke-width="3.5"/>
+  <text x="695" y="384" font-size="12" font-weight="700" fill="#1e293b">Mental Task (Cognitive)</text>
+</svg>
